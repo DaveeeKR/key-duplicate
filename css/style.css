@@ -4,8 +4,12 @@
   margin: 0;
 }
 
+html {
+  scroll-padding-top: 10vh;
+}
+
 body {
-  background: linear-gradient(90deg, #222222, #333);
+  background-color: #222222;
   font-family: "Nunito", sans-serif;
   font-family: "Oswald", sans-serif;
   font-family: "Roboto Slab", serif;
@@ -154,16 +158,20 @@ header.active {
 main {
   transition: 0.3s;
 }
-main .aboutus p i {
+main .services p {
+  padding: 0 20px;
+}
+main .services p i {
   font-size: 2.137rem;
   margin: 30px;
 }
-main .aboutus .aboutus-card-title {
-  font-size: 1.5rem;
+main .services .aboutus-card-title {
+  text-shadow: 0 0 60px #fccb06;
+  font-size: 1.4rem;
   text-transform: uppercase;
 }
-main .aboutus .aboutus-card-text {
-  font-size: 1.2rem;
+main .services .aboutus-card-text {
+  font-size: 1.1rem;
 }
 
 main.active {

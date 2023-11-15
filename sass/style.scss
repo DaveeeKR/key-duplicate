@@ -3,9 +3,12 @@
 	padding: 0;
 	margin: 0;
 }
+html {
+	scroll-padding-top: 10vh;
+}
 
 body {
-	background: linear-gradient(90deg, #222222, #333);
+	background-color: #222222;
 	font-family: 'Nunito', sans-serif;
 	font-family: 'Oswald', sans-serif;
 	font-family: 'Roboto Slab', serif;
@@ -150,20 +153,22 @@ header.active {
 
 main {
 	transition: 0.3s;
-	.aboutus {
+	.services {
 		p {
+			padding: 0 20px;
 			i {
 				font-size: 2.137rem;
 				margin: 30px;
 			}
 		}
 		.aboutus-card-title {
-			font-size: 1.5rem;
+			text-shadow: 0 0 60px #fccb06;
+			font-size: 1.4rem;
 			text-transform: uppercase;
 		}
 
 		.aboutus-card-text {
-			font-size: 1.2rem;
+			font-size: 1.1rem;
 		}
 	}
 }
@@ -171,3 +176,4 @@ main {
 main.active {
 	filter: blur(0.5rem);
 }
+
