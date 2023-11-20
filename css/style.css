@@ -79,7 +79,7 @@ nav {
 nav .nav {
   position: fixed;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
   height: 10vh;
   z-index: 101;
