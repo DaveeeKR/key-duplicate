@@ -40,6 +40,7 @@ body {
   position: absolute;
   bottom: 60px;
   left: 50%;
+  z-index: 80;
 }
 
 .shadow-bg {
@@ -171,11 +172,12 @@ main .aboutus {
   z-index: 0;
 }
 main .aboutus .aboutus-txt {
-  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  text-align: justify;
+  margin-top: 35%;
+  padding: 18px;
 }
 main .serv {
   background-color: #333;
