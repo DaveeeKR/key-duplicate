@@ -31,3 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	window.addEventListener('scroll', addShadow);
 });
 
+window.addEventListener('load', function () {
+	document
+		.getElementById('year')
+		.appendChild(document.createTextNode(new Date().getFullYear()));
+});
