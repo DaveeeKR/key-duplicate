@@ -136,8 +136,8 @@
 							<p><i class="bi bi-scissors gold-txt"></i></p>
 							<p class="services-card-title w-txt mb-1">Ostrzenie</p>
 							<p class="services-card-text w-txt">
-								Zajmujemy się precyzyjnym ostrzeniem noży, nożyczek, cążek oraz
-								łańcuchów do pił.
+								Zajmujemy się precyzyjnym ostrzeniem noży, noży do owerloka,
+								nożyczek, cążek oraz łańcuchów do pił.
 							</p>
 						</div>
 						<div class="col-sm-6 col-md-4 text-center">
@@ -172,31 +172,94 @@
 					<h2 class="section-title">galeria</h2>
 					<div class="underline"></div>
 				</div>
-				<div class="slider-wrapper container">
-					<button class="slider-btn prev-slider">
-						<i class="bi bi-chevron-left txt"></i>
-					</button>
-					<button class="slider-btn next-slider">
-						<i class="bi bi-chevron-right txt"></i>
-					</button>
-					<div class="slider">
-						<img id="slider1" src="./media/img/PB170115.jpg" alt="" />
-						<img id="slider2" src="./media/img/PB170124.jpg" alt="" />
-						<img id="slider3" src="./media/img/PB170127.jpg" alt="" />
-						<img id="slider4" src="./media/img/PB170128.jpg" alt="" />
-						<img id="slider5" src="./media/img/PB170132.jpg" alt="" />
-						<img id="slider6" src="./media/img/PB170100.jpg" alt="" />
-						<img id="slider7" src="./media/img/PB170121.jpg" alt="" />
+				<div id="carouselExampleIndicators" class="carousel slide container">
+					<div class="carousel-indicators">
+						<button
+							type="button"
+							data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="0"
+							class="active"
+							aria-current="true"
+							aria-label="Slide 1"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="1"
+							aria-label="Slide 2"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="2"
+							aria-label="Slide 3"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="3"
+							aria-label="Slide 4"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="4"
+							aria-label="Slide 5"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="5"
+							aria-label="Slide 6"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="6"
+							aria-label="Slide 7"
+						></button>
 					</div>
-					<div class="slider-nav">
-						<a class="txt" href="#slider1"></a>
-						<a class="txt" href="#slider2"></a>
-						<a class="txt" href="#slider3"></a>
-						<a class="txt" href="#slider4"></a>
-						<a class="txt" href="#slider5"></a>
-						<a class="txt" href="#slider6"></a>
-						<a class="txt" href="#slider7"></a>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="./media/img/PB170115.jpg" alt="" />
+						</div>
+						<div class="carousel-item">
+							<img src="./media/img/PB170124.jpg" alt="" />
+						</div>
+						<div class="carousel-item">
+							<img src="./media/img/PB170127.jpg" alt="" />
+						</div>
+						<div class="carousel-item">
+							<img src="./media/img/PB170128.jpg" alt="" />
+						</div>
+						<div class="carousel-item">
+							<img src="./media/img/PB170132.jpg" alt="" />
+						</div>
+						<div class="carousel-item">
+							<img src="./media/img/PB170100.jpg" alt="" />
+						</div>
+						<div class="carousel-item">
+							<img src="./media/img/PB170121.jpg" alt="" />
+						</div>
 					</div>
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#carouselExampleIndicators"
+						data-bs-slide="prev"
+					>
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button
+						class="carousel-control-next txt"
+						type="button"
+						data-bs-target="#carouselExampleIndicators"
+						data-bs-slide="next"
+					>
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
 				</div>
 				<div class="hero-shadow"></div>
 			</section>
