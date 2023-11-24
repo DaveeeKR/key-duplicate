@@ -252,13 +252,4 @@ footer .footer-nav .footer-nav-items {
 }
 footer p {
   margin-bottom: 0;
-}
-
-@media (min-width: 1000px) {
-  .bi-list {
-    display: none;
-  }
-  .nav-list {
-    position: fixed;
-  }
 }/*# sourceMappingURL=style.css.map */
