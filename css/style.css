@@ -44,8 +44,7 @@ body {
 }
 
 .shadow-bg {
-  -webkit-backdrop-filter: blur(0.2137rem);
-          backdrop-filter: blur(0.2137rem);
+  background-color: #222222;
 }
 
 .section-title {
@@ -118,7 +117,7 @@ nav .nav-list.active {
 header {
   position: relative;
   height: 100vh;
-  background-image: url(../media/img/AdobeStock_96460556.jpeg);
+  background-image: url(../media/img/main.webp);
   background-size: cover;
   background-position: left;
   background-attachment: fixed;
@@ -152,7 +151,7 @@ header .hero-text h2 {
     width: 0;
   }
   to {
-    width: 15rem;
+    width: 245px;
   }
 }
 
@@ -202,22 +201,25 @@ main .services .services-card-text {
   font-size: 1.1rem;
 }
 main .photos .carousel {
+  max-width: 50rem;
   padding: 0;
 }
 main .photos .carousel .carousel-inner {
   position: relative;
-  max-width: 46rem;
   margin: 0 auto;
 }
 main .photos .carousel .carousel-inner .carousel-item {
   aspect-ratio: 4/3;
-  overflow-x: auto;
+  overflow-x: hidden;
   overflow-y: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
 }
 main .photos .carousel .carousel-inner .carousel-item img {
   width: 100%;
-  margin: auto;
 }
 main .contact .contact-txt {
   padding: 0 0 30px;
@@ -232,7 +234,7 @@ main.active {
 
 footer {
   position: relative;
-  background-image: url(../media/img/AdobeStock_367266171.jpeg);
+  background-image: url(../media/img/footer.webp);
   background-size: cover;
   background-position: left;
   background-attachment: fixed;
@@ -250,4 +252,13 @@ footer .footer-nav .footer-nav-items {
 }
 footer p {
   margin-bottom: 0;
+}
+
+@media (min-width: 1000px) {
+  .bi-list {
+    display: none;
+  }
+  .nav-list {
+    position: fixed;
+  }
 }/*# sourceMappingURL=style.css.map */

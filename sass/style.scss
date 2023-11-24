@@ -39,7 +39,8 @@ body {
 }
 
 .shadow-bg {
-	backdrop-filter: blur(0.2137rem);
+	// backdrop-filter: blur(0.2137rem);
+	background-color: #222222;
 }
 
 .section-title {
@@ -75,6 +76,7 @@ button {
 nav {
 	position: absolute;
 	z-index: 100;
+
 	.nav {
 		position: fixed;
 		width: 100%;
@@ -83,6 +85,7 @@ nav {
 		height: 10vh;
 		z-index: 101;
 		transition: 0.4s;
+
 		.mob-items {
 			padding: 0 40px;
 		}
@@ -111,7 +114,7 @@ nav {
 header {
 	position: relative;
 	height: 100vh;
-	background-image: url(../media/img/AdobeStock_96460556.jpeg);
+	background-image: url(../media/img/main.webp);
 	background-size: cover;
 	background-position: left;
 	background-attachment: fixed;
@@ -143,7 +146,7 @@ header {
 				width: 0;
 			}
 			to {
-				width: 15rem;
+				width: 245px;
 			}
 		}
 	}
@@ -199,17 +202,23 @@ main {
 	}
 	.photos {
 		.carousel {
+			max-width: 50rem;
 			padding: 0;
 			.carousel-inner {
 				position: relative;
-				max-width: 46rem;
+
 				margin: 0 auto;
 
 				.carousel-item {
 					aspect-ratio: 4 / 3;
-					overflow-x: auto;
+					overflow-x: hidden;
 					overflow-y: hidden;
+					object-fit: cover;
+					object-position: center;
 					box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0, 0, 0.25);
+					img {
+						width: 100%;
+					}
 				}
 			}
 		}
@@ -229,12 +238,13 @@ main.active {
 
 footer {
 	position: relative;
-	background-image: url(../media/img/AdobeStock_367266171.jpeg);
+	background-image: url(../media/img/footer.webp);
 	background-size: cover;
 	background-position: left;
 	background-attachment: fixed;
 	transition: 0.3s;
 	z-index: 0;
+
 	.footer-nav {
 		display: flex;
 		justify-content: center;
@@ -246,5 +256,14 @@ footer {
 	}
 	p {
 		margin-bottom: 0;
+	}
+}
+
+@media (min-width: 1000px) {
+	.bi-list {
+		display: none;
+	}
+	.nav-list {
+		position: fixed;
 	}
 }
