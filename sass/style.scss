@@ -1,3 +1,5 @@
+@use './animations' as *;
+
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -114,12 +116,13 @@ nav {
 header {
 	position: relative;
 	height: 100vh;
-	background-image: url(../media/img/main.webp);
+	background-image: url(../media/img/main-sm.webp);
 	background-size: cover;
 	background-position: left;
 	background-attachment: fixed;
 	transition: 0.3s;
 	z-index: 0;
+
 	.hero-text {
 		height: 100%;
 		display: flex;
@@ -238,7 +241,7 @@ main.active {
 
 footer {
 	position: relative;
-	background-image: url(../media/img/footer.webp);
+	background-image: url(../media/img/footer-sm.webp);
 	background-size: cover;
 	background-position: left;
 	background-attachment: fixed;
@@ -256,5 +259,53 @@ footer {
 	}
 	p {
 		margin-bottom: 0;
+	}
+}
+@media (min-width: 1000px) {
+	nav {
+		.nav {
+			width: 100vw;
+			justify-content: left;
+			padding: 0 0 0 10%;
+			.list {
+				display: none;
+			}
+		}
+
+		.nav-list {
+			width: 100%;
+			height: 10vh;
+			display: flex;
+			justify-content: end;
+			align-items: center;
+			left: 0;
+			top: 0;
+			gap: 25px;
+			margin: 0;
+			padding: 0 10% 0 0;
+			z-index: 120;
+		}
+	}
+	header {
+		background-image: url(../media/img/main.webp);
+		.hero-text {
+			h1 {
+				font-size: 2.7rem;
+			}
+			h2 {
+				font-size: 2.137rem;
+			}
+			@keyframes typing {
+				from {
+					width: 0;
+				}
+				to {
+					width: 370px;
+				}
+			}
+		}
+	}
+	footer {
+		background-image: url(../media/img/footer.webp);
 	}
 }
