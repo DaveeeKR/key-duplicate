@@ -256,6 +256,9 @@ main .aboutus .aboutus-txt {
   max-width: 1000px;
   margin: 0 auto;
 }
+main .aboutus .aboutus-txt h4 {
+  font-size: 1.2rem;
+}
 main .aboutus .aboutus-txt .serv {
   background-color: #333;
   padding: 9px 13px;
@@ -305,7 +308,8 @@ main .photos .carousel .carousel-inner .carousel-item img {
 main .contact .contact-txt {
   padding: 0 0 30px;
 }
-main .contact .contact-txt p {
+main .contact .contact-txt p,
+main .contact .contact-txt h4 {
   margin-bottom: 0;
 }
 

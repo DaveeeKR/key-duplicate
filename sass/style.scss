@@ -173,6 +173,10 @@ main {
 			max-width: 1000px;
 			margin: 0 auto;
 
+			h4 {
+				font-size: 1.2rem;
+			}
+
 			.serv {
 				background-color: #333;
 				padding: 9px 13px;
@@ -230,7 +234,8 @@ main {
 	.contact {
 		.contact-txt {
 			padding: 0 0 30px;
-			p {
+			p,
+			h4 {
 				margin-bottom: 0;
 			}
 		}
@@ -258,6 +263,7 @@ footer {
 			padding: 4px;
 		}
 	}
+
 	p {
 		margin-bottom: 0;
 	}
