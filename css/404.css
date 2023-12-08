@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #222222;
+  font-family: "Nunito", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Roboto Slab", serif;
+}
+
+.w-txt {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.884);
+}
+
+.g-txt {
+  color: #fccb06;
+}
+
+section {
+  position: relative;
+  height: 100vh;
+  background-image: url(../media/img/404.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  transition: 0.3s;
+  z-index: 0;
+}
+section .txt {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section .txt h1 {
+  font-size: 12rem;
+  margin: -100px 0 -30px;
+}
+section .txt h2 {
+  font-size: 2.137rem;
+}
+section .txt p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+section .txt .home {
+  background-color: #fccb06;
+  text-shadow: 1px 1px 1px rgba(61, 61, 61, 0.616);
+  padding: 7px;
+  border-radius: 8px;
+  transition: background-color, box-shadow 0.3s;
+}
+section .txt .home:hover {
+  background-color: #ffbb00;
+  box-shadow: 0 0 10px #ffbb00;
+}
+section .shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -5;
+}/*# sourceMappingURL=404.css.map */
